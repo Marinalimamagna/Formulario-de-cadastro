@@ -1,0 +1,112 @@
+/* Estilos para o contêiner do formulário de login */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Fundo azul claro */
+}
+
+.login-container {
+    width: 320px;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff; /* Fundo branco */
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #1e90ff; /* Azul escuro */
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+/* Estilos para os rótulos e campos de entrada */
+.login-container label {
+    display: block;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-size: 14px;
+}
+
+.login-container input[type="text"],
+.password-container input[type="password"],
+.password-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #1e90ff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Estilo para o contêiner de senha com o ícone */
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    padding-right: 40px; /* Espaço para o ícone */
+}
+
+/* Estilo para o ícone do "olhinho" */
+.password-container .toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #1e90ff;
+    user-select: none;
+    transition: color 0.3s;
+}
+
+.password-container .toggle-password:hover {
+    color: #187bcd; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Estilo para o botão de envio */
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+
+}
+/* Estilos para o link de cadastro */
+.register-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+.register-link a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.register-link a:hover {
+    color: #187bcd; /* Azul mais escuro ao passar o mouse */
+}
+
+
+.login-container button:hover {
+    background-color: #187bcd; /* Azul mais escuro */
+}

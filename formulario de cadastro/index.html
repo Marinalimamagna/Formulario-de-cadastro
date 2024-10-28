@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Vinculando o CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="login_process.php" method="post">
+            <label for="username">Usuário</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Senha</label>
+            <div class="password-container">
+                <input type="password" id="password" name="password" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility()">
+                    👁️
+                </span>
+            </div>
+
+            <button type="submit">Entrar</button>
+        </form>
+
+        <!-- Link para a página de cadastro -->
+        <p class="register-link">Não possui uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+    </div>
+
+    <script>
+        function togglePasswordVisibility() {
+            const passwordField = document.getElementById("password");
+            const toggleIcon = document.querySelector(".toggle-password");
+            
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                toggleIcon.textContent = "🙈"; // Ícone de olhos fechados
+            } else {
+                passwordField.type = "password";
+                toggleIcon.textContent = "👁️"; // Ícone de olhos abertos
+            }
+        }
+    </script>
+</body>
+</html>
